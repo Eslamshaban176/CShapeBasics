@@ -2,9 +2,9 @@ namespace EnumAlternative;
 
 public class Country
 {
-    public string Name { get; set; }
-    public string Code { get; set; }
-    public int PhoneCode { get; set; }
+    public string Name { get; private set; }
+    public string Code { get;  private set; }
+    public int PhoneCode { get; private set; }
 
     public static readonly Country Egypt = new Country(20, "Egypt", "EGY");
     public static readonly Country Algeria = new Country(213, "Algeria", "ALG");
@@ -38,7 +38,7 @@ public class Country
 
     private static readonly List<Country> _countries = new()
     {
-        Egypt, Algeria, Bahrain, Comoros, Djibouti, Iraq, Jordan, Kuwait, Lebanon, Libya, Mauritania, Morocco  
+        Egypt, Algeria, Bahrain, Comoros, Djibouti, Iraq, Jordan, Kuwait, Lebanon, Libya, Mauritania, Morocco
         , Oman, Palestine, Qatar, Saudi_Arabia, Somalia, Sudan, Syria, Tunisia, United_Arab_Emirates, Yemen
     };
 
